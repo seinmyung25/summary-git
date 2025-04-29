@@ -1,0 +1,30 @@
+{
+  "name": "summary-git",
+  "version": "1.0.0",
+  "description": "Auto-generate .cursor/rules and missing-features.md using OpenAI API",
+  "scripts": {
+    "build": "tsup",
+    "dev": "pnpm build && node dist/index.js",
+    "linking": "pnpm build && pnpm link --global ."
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^16.0.0",
+    "ignore": "^7.0.4",
+    "openai": "^4.96.0",
+    "simple-git": "^3.27.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.15.3",
+    "ts-node": "^10.9.2",
+    "tsup": "^8.4.0",
+    "typescript": "^5.2.2"
+  },
+  "type": "module",
+  "bin": {
+    "summary-git": "dist/index.js"
+  },
+  "packageManager": "pnpm@10.10.0+sha512.d615db246fe70f25dcfea6d8d73dee782ce23e2245e3c4f6f888249fb568149318637dca73c2c5c8ef2a4ca0d5657fb9567188bfab47f566d1ee6ce987815c39"
+}
